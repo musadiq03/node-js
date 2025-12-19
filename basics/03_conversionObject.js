@@ -33,3 +33,14 @@ let someNumber = 33
 let stringNumber = String(someNumber)
 console.log(stringNumber)
 console.log(typeof stringNumber)
+
+// ********************************** Operations *************************************************
+
+let value = 3
+let negVal = -value
+// console.log(negVal)
+//  For detail visit TOPrimitive (prefertype) in acma link
+console.log("1" + 2)
+console.log(1 + "2")
+console.log("1" + 2 + 2)
+console.log(1 + 2 + "2")
