@@ -32,6 +32,8 @@ let obj = {
 
 }
 
+console.log(obj.age)
+
 const myFunction = function(){
  
     console.log("Ali")
@@ -39,3 +41,38 @@ const myFunction = function(){
 }
 
 // Read typeof operator in detail from ecma doumentation 
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// memory type like {Stack for (Primitive) datatypes and Heap for (Non-primitive) datatypes }
+
+//  In stack if you assign value to other varibale system copy the value and save to other variable location
+
+//  In other hand in Heap if you assign value to other variable system copy the reference number and save
+//  other variable location
+
+//  Stack Example
+
+let Name = "Ali"
+
+let FullName = Name
+
+FullName = "Musadiq Ali"
+
+console.log(Name)
+console.log(FullName)
+ 
+// Heap Example
+
+let user = {
+
+    email : "musadiq2ali@gmail.com",
+    id : "ali03"
+}
+
+let userTwo = user
+
+userTwo.email = "03musadiq@gmail.com"
+
+console.log(user.email)
+console.log(userTwo.email)
